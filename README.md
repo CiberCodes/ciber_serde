@@ -2,7 +2,10 @@
 
 # Ciber Serde
 
-[![CI](https://github.com/CiberCodes/ciber_serde/actions/workflows/ci.yml/badge.svg)](https://github.com/CiberCodes/ciber_serde/actions/workflows/ci.yml) [![Crates.io](https://img.shields.io/crates/v/ciber_serde.svg)](https://crates.io/crates/ciber_serde) [![Documentation](https://docs.rs/ciber_serde/badge.svg)](https://docs.rs/ciber_serde) [![License](https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-blue.svg)](#license)
+[![CI](https://github.com/CiberCodes/ciber_serde/actions/workflows/ci.yml/badge.svg)](https://github.com/CiberCodes/ciber_serde/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/ciber_serde.svg)](https://crates.io/crates/ciber_serde)
+[![Documentation](https://docs.rs/ciber_serde/badge.svg)](https://docs.rs/ciber_serde)
+[![License](https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-blue.svg)](#license)
 
 **Serde serialization and deserialization for the CBR data format**
 
@@ -127,8 +130,13 @@ Licensed under either of the following, at your option:
 - [MIT License](LICENSE-MIT)
 - [Apache License 2.0](LICENSE-APACHE)
 
+## Release
+
+Releases are tagged as `v<version>` (for example, `v0.1.0`). See the
+[changelog](CHANGELOG.md) for release history. Creating a tag generates a
+GitHub Release; publishing to crates.io is a separate manual step.
+
 ---
 
 <sub>Engineered by CiberCodes</sub>
-
 </div>
