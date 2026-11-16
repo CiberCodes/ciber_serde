@@ -13,19 +13,22 @@
 
 ## Overview
 
-`ciber_serde` connects Rust types that implement [Serde](https://serde.rs/) to the CBR format provided by [
-`ciber_cbr`](https://github.com/CiberCodes/ciber_cbr). It serializes Rust values into CBR documents and deserializes CBR
-documents back into Rust types.
+`ciber_serde` connects Rust types that implement [Serde](https://serde.rs/) to the
+CBR format provided by [`ciber_cbr`](https://github.com/CiberCodes/ciber_cbr).
+It serializes Rust values into CBR documents and deserializes CBR documents back
+into Rust types.
 
-This crate provides `CbrSerializer`, `CbrDeserializer`, and convenience functions for reading, writing, and converting
-CBR text. Parsing and document formatting are handled by `ciber_cbr`.
+This crate provides `CbrSerializer`, `CbrDeserializer`, and convenience
+functions for reading, writing, and converting CBR text. Parsing and document
+formatting are handled by `ciber_cbr`.
 
 ## Features
 
 - Serialize Serde-compatible values to compact or pretty CBR text.
 - Deserialize CBR documents from readers and strings.
 - Support structs, maps, sequences, tuples, tuple structs, and enum variants.
-- Preserve CBR value types, including nulls, booleans, integers, floats, strings, bytes, arrays, objects, and sets.
+- Preserve CBR value types, including nulls, booleans, integers, floats,
+  strings, bytes, arrays, objects, and sets.
 - Check integer conversions against the destination type's range.
 
 ## Installation
@@ -37,6 +40,8 @@ Add the crate to your `Cargo.toml`:
 ciber_serde = "0.1"
 serde = { version = "1", features = ["derive"] }
 ```
+
+The `0.1` requirement selects compatible `0.1.x` releases, including `0.1.0`.
 
 ## Quick start
 
@@ -103,8 +108,9 @@ fn save_and_load() -> Result<(), Box<dyn std::error::Error>> {
 
 ## Examples and tests
 
-Runnable examples are in [`examples/`](examples/), including a file read/write round trip. Integration tests cover
-serialization and deserialization for maps, sequences, structs, tuples, and enum variants.
+Runnable examples are in [`examples/`](examples/), including a file read/write
+round trip. Integration tests cover serialization and deserialization for
+maps, sequences, structs, tuples, and enum variants.
 
 Run the test suite with:
 
@@ -120,8 +126,8 @@ cargo run --example file
 
 ## Related crate
 
-[`ciber_cbr`](https://github.com/CiberCodes/ciber_cbr) implements the CBR value model, parser, formatter, and document
-I/O used by this Serde integration.
+[`ciber_cbr`](https://github.com/CiberCodes/ciber_cbr) implements the CBR value
+model, parser, formatter, and document I/O used by this Serde integration.
 
 ## License
 
