@@ -1,0 +1,46 @@
+[package]
+name = "ciber_serde"
+version = "0.1.0"
+edition = "2024"
+authors = ["CiberCodes <tuliosouza0803@gmail.com>"]
+description = "Serde support for the CBR data format"
+repository = "https://github.com/CiberCodes/ciber_serde"
+homepage = "https://crates.io/crates/ciber_serde/"
+documentation = "https://docs.rs/ciber_serde"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["config", "settings", "serde", "configuration", "framework"]
+categories = ["config", "development-tools"]
+
+[dependencies]
+ciber_cbr = {
+    version = "0.1.0",
+    default-features = false,
+    features = ["serde"]
+}
+
+serde = {
+    version = "1.0.229",
+    default-features = false,
+    features = ["derive"],
+}
+
+[features]
+default = []
+crypto = ["ciber_cbr/crypto"]
+full = ["crypto"]
+
+[lints.rust]
+unsafe_code = "warn"
+missing_docs = "warn"
+missing_debug_implementations = "warn"
+
+[lints.clippy]
+pedantic = "warn"
+nursery = "warn"
+unwrap_used = "warn"
+expect_used = "warn"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
