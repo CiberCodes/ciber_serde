@@ -130,12 +130,6 @@ Licensed under either of the following, at your option:
 - [MIT License](LICENSE-MIT)
 - [Apache License 2.0](LICENSE-APACHE)
 
-## Release
-
-Releases are tagged as `v<version>` (for example, `v0.1.0`). See the
-[changelog](CHANGELOG.md) for release history. Creating a tag generates a
-GitHub Release; publishing to crates.io is a separate manual step.
-
 ---
 
 <sub>Engineered by CiberCodes</sub>
